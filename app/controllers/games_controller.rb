@@ -11,8 +11,8 @@ class GamesController < ApplicationController
   end
 
   def score
-    @word = params[:word] || ""
-    @grid = params[:grid] || ""
+    @word = params[:word] || ''
+    @grid = params[:grid] || ''
     if check_against_grid(@word, @grid) == false
       @result = "Sorry #{@word} cannot be built from #{@grid}. Your score has been reset to 0."
       @score = 0
