@@ -1,0 +1,76 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columns {
+  flex-direction: column;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.letter-card {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(117, 117, 252);
+  color: white;
+  margin-right: 10px;
+  box-shadow: 2px 1px 5px rgb(83, 83, 83);
+}
+
+.purple-button {
+  background-color: rgb(117, 117, 252);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.purple-button-large {
+  background-color: rgb(117, 117, 252);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.large-input {
+  padding: 10px;
+  border-radius: 0;
+  border: 2px solid rgb(117, 117, 252);
+}
+
+.large-input:focus-visible {
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+}

@@ -1,0 +1,18 @@
+<div class="container columns align-items-center">
+<h1>New game 🎮</h1>
+  <p>Current score: <%= @score %></p>
+  <div class="rows justify-content-center">
+    <% @grid.each do |letter| %>
+          <p class="letter-card"><%= letter %></p>
+        <% end %>
+  </div>
+  <h3>What is the longest word you can find?</h3>
+      <form action="/score" method="post">
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= hidden_field_tag :grid, @grid %>
+      <div class="wrapper">
+        <input class="large-input" type="text" required name="word" value="<%= params[:word] %>">
+        <input class="purple-button" type="submit" value="Play">
+      </div>
+    </form>
+</div>
